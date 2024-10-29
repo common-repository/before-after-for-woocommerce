@@ -1,0 +1,344 @@
+/*
+* Style for shortcode input
+*/
+.beafwc-shortcode-wraper .cmb-row {
+	padding: 0 !important;
+	margin: 0 !important
+}
+
+.cmb2-id-beafwc-pro-image1,
+.cmb2-id-beafwc-pro-image2,
+.cmb2-id-beafwc-pro-image {
+	position: relative;
+	padding: 0 !important
+}
+
+.cmb2-id-beafwc-pro-image1::before-,
+.cmb2-id-beafwc-pro-image2::before,
+.cmb2-id-beafwc-pro-image::before {
+	position: absolute;
+	z-index: 35;
+	width: 240px;
+	left: 0;
+	background: #dddddda8;
+	content: 'Upgrade to pro';
+	height: 43px;
+	text-align: center;
+	color: red;
+	font-size: 18px;
+	cursor: pointer;
+	font-weight: 600;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	margin: 0 auto;
+	right: 0;
+	top: 50%;
+	margin-top: -22px;
+	border-radius: 5px;
+}
+
+.beafwc-tooltip {
+	position: relative;
+	display: inline-block
+}
+
+.beafwc-tooltip span {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	margin-left: 5px;
+	font-weight: 600;
+	background: #f8f8f8;
+	color: #1313fc;
+	display: block;
+	border-radius: 30px
+}
+
+.beafwc-tooltip .beafwc-tooltip-info {
+	display: none;
+	position: absolute;
+	z-index: 90;
+	bottom: 100%;
+	left: 10px;
+	text-align: center;
+	transition: 0.5s;
+	max-width: 160px;
+	min-width: 100px;
+	background: #0d0d0d;
+	height: auto;
+	padding: 10px;
+	border-radius: 4px;
+	color: #fff
+}
+
+.beafwc-tooltip:hover .beafwc-tooltip-info {
+	display: block;
+}
+
+.beafwc-pro-link {
+	color: #ca4a1f;
+	font-weight: bold
+}
+
+/* Style the tab */
+.beafwc-tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	background-color: #0652DD;
+}
+
+/* Style the buttons inside the tab */
+.beafwc-tab a {
+	background-color: inherit;
+	float: left;
+	border-right: 1px solid #fff;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+	color: #fff
+}
+
+.beafwc-tab a:last-child {
+	border-right: 0
+}
+
+/* Change background color of buttons on hover */
+.beafwc-tab a:hover {
+	background-color: #fff;
+	color: #444
+}
+
+/* Create an active/current tablink class */
+.beafwc-tab a.active {
+	background-color: #fff;
+	color: #444
+}
+
+/* Style the tab content */
+.beafwc-tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+
+.beafwc-tabcontent .beafwc-option-label {
+	width: 250px
+}
+
+#beafwc_before_after_image_thumbnail,
+#beafwc_before_image_thumbnail,
+#beafwc_after_image_thumbnail {
+	max-width: 120px;
+	display: block;
+	margin-top: 5px;
+}
+
+.beafwc-option-table tr {
+	border-bottom: 1px solid #ddd;
+	padding: 20px 0 !important;
+	display: block;
+}
+
+.beafwc-option-table tr:last-child {
+	border-bottom: 0;
+}
+
+.beafwc-option-label label {
+	font-weight: 600;
+}
+
+/* HIDE RADIO */
+input[name=beafwc_before_after_style] {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+/* IMAGE STYLES */
+input[name=beafwc_before_after_style] + label img {
+	cursor: pointer;
+}
+
+/* CHECKED STYLES */
+input[name=beafwc_before_after_style]:checked + label img {
+	outline: 2px solid #0652DD;
+}
+ul.beafwc-before-after-style li {
+    display: inline-block;
+    margin-left: 10px;
+}
+ul.orientation-style li {
+	display: inline-block;
+	margin-left: 15px
+}
+
+.beafwc_button {
+	border: 0;
+	padding: 8px 10px;
+	background: #0652DD;
+	color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+	max-height: 35px;
+	transition: 0.5
+}
+
+.beafwc_button:hover {
+	opacity: 0.9
+}
+
+.beafwc-option-content input[type=text] {
+	padding: 7px;
+	border-radius: 4px;
+	height: 35px
+}
+
+.beafwc-option-content p {
+	margin: 0;
+}
+
+/* Gallery shortcode generator CSS */
+@media (min-width: 783px) {
+	.beafwc-wrap {
+		display: flex;
+	}
+	
+	#beafwc_gallery_generator,
+	#beafwc_filter_gallery_style,
+	#beafwc_filter_gallery_generator {
+		height: 100%
+	}
+}
+
+#beafwc_gallery_generator,
+#beafwc_filter_gallery_style,
+#beafwc_filter_gallery_generator {
+	margin-top: 50px;
+	border-radius: 5px;
+	background-color: #fff;
+	padding: 20px;
+	max-width: 350px;
+	position: relative;
+	display: inline-block;
+}
+
+#beafwc_filter_gallery_style {
+	width: 350px;
+}
+
+#beafwc_gallery_generator,
+#beafwc_filter_gallery_generator {
+	margin-right: 30px
+}
+
+#beafwc_gallery_generator h2,
+#beafwc_filter_gallery_style h2,
+#beafwc_filter_gallery_generator h2 {
+	color: #23282d;
+	font-size: 1.3em;
+	margin: 1em 0;
+}
+
+#beafwc_gallery_generator input[type=text],
+#beafwc_filter_gallery_generator input[type=text],
+#beafwc_gallery_generator input[type=number],
+#beafwc_filter_gallery_generator input[type=number],
+#beafwc_gallery_generator select,
+#beafwc_filter_gallery_generator select,
+#beafwc_filter_gallery_style input[type=number] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+.beafwc_gallery_info,
+.beafwc_filter_gallery_info{
+	margin: 5px 0;
+	display: block;
+}
+#beafwc_gallery_generator input[type=submit],
+#beafwc_filter_gallery_style input[type=submit],
+#beafwc_filter_gallery_generator input[type=submit] {
+	width: 100%;
+	background-color: #0652DD;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#beafwc_gallery_generator input[type=submit]:hover,
+#beafwc_filter_gallery_generator input[type=submit]:hover,
+#beafwc_filter_gallery_style input[type=submit]:hover {
+	background-color: #0f60f4;
+}
+
+#beafwc_gallery_shortcode_copy_alert,
+#beafwc_filter_gallery_shortcode_copy_alert {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(6, 82, 221, 0.78);
+	top: 0;
+	left: 0;
+	border-radius: 5px;
+	text-align: center;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 21px;
+	font-weight: 600;
+	display: none
+}
+.beafwc-go-pro{
+	color:#ca4a1f;
+	font-weight: bold;
+}
+
+/* Review admin notice CSS */
+.themefic_review_notice ul li {
+	display: inline-block;
+}
+
+.themefic_review_notice ul {
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+.themefic_review_notice ul li a {
+	text-decoration: none;
+	padding: 7px;
+	color: #00718A;
+	font-weight: 600;
+	transition: 0.4s;
+}
+
+.themefic_review_notice ul li:nth-child(1) a {
+	padding-left: 0 !important;
+}
+
+.themefic_review_notice ul li a span {
+	padding-right: 3px;
+	display: inline-block;
+}
+
+.themefic_review_notice ul li a:hover {
+	color: #218ea6;
+}
+
+.themefic_review_notice {
+	position: relative;
+}
